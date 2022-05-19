@@ -1,0 +1,28 @@
+<h1> Lista de Chamados </h1>
+
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Chamado</th>
+            <th>Nome</th>                
+            <th>Data</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let chamado of _chamados">
+            <td>{{chamado.id}}</td>
+            <td>{{chamado.nome}}</td>
+            <td>{{chamado.dataDeAbertura}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+
+
+
+
